@@ -1,5 +1,5 @@
 import Head from 'next/head'; 
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import React from 'react';
 import PlaceIcon from '@mui/icons-material/Place';
 import PhoneIcon from '@mui/icons-material/Phone';
