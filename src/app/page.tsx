@@ -28,7 +28,7 @@ export default async function HomePage() {
     <>
     <div className="">
       <Slider />
-      {/* SVG WAVE VECTOR */}
+      {/* SVG WAVE VECTORR */}
       <div className="custom-shape-divider-bottom">
           <svg
             className="absolute bottom-0 w-full"
