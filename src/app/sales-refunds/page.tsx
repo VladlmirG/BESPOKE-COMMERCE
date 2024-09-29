@@ -1,5 +1,5 @@
 import Head from 'next/head'; 
-import type  Metadata  from "next";
+import type { Metadata } from "next";
 import React from 'react';
 
 export const metadata: Metadata = {
