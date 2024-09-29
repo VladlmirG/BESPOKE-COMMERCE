@@ -32,12 +32,8 @@ const About = () => {
 
         <div>
           <h1 className='text-2xl font-bold mb-4'>BESPOKE XV & FORMAL</h1>
-          <p className='text-l'>At Bespoke, we have the dress made for you. Bespoke was born in November 2021, after a conversation led to the unraveling of made particularly for me. Our founder, Johanna Reyes, who has over 10 years of experience in the retail industry, and having seen customers buy their bespoke dress, dreamed of helping quinceñearas find the dress that bespoke to them.
+          <p className='text-l'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
           </p><br></br>
-
-          <p className='text-l'>As retailers, at Bespoke you can find dresses from: Morilee, Mary's Bridal, Princesa By Ariana Vara and Q By DaVinci</p><br></br>
-
-          <p className='text-l'>Please refer to our "Request an Appointment" page or visit us at: 22145 Katy Fwy, Ste C Katy, TX 77450.</p>
         </div>
       </div>
     </div>
