@@ -18,10 +18,10 @@ const Slider = () => {
         {/* OVERLAY */}
         <div className="vid-overlay absolute inset-0 flex flex-col items-center justify-center text-center text-white p-6 pt-40 md:pt-0">
           <h2 className="text-lg md:text-2xl font-light mb-4">
-            Porque todas merecemos cosas únicas
+             I want people to see the dress
           </h2>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-8 z-1">
-            Ropa diseñada para ti
+            But focus on the woman
           </h1>
           <Link href="/list?cat=all-products">
             <button className="rounded-2xl bg-button text-white py-3 px-4 hover:bg-hovr transition duration-500">
