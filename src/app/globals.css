@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: var(--font-poppins), sans-serif; /* Set Inter as the default font */
+}
+
+.montserrat-font{
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.six_caps-font{
+  font-family: var(--font-six-caps), sans-serif;
+}
 
 .subm {
   backdrop-filter: blur(16px) saturate(174%);
@@ -19,12 +30,6 @@
 .embla {
   overflow: hidden;
 }
-/* .embla__container {
-  display: flex;
-}
-.embla__slide {
-  gap: 1rem;
-} */
 
 
 .tumbs{
