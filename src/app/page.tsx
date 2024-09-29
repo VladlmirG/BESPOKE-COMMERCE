@@ -1,4 +1,4 @@
-import type  Metadata  from "next";
+import type { Metadata } from "next";
 import CategoryList from "@/components/CategoryList";
 import ProductList from "@/components/ProductList";
 import Skeleton from "@/components/Skeleton";
