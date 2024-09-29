@@ -1,16 +1,39 @@
-// import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Six_Caps, Montserrat, Poppins, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WixClientContextProvider } from "@/context/wixContext";
 
-const inter = Inter({ subsets: ["latin"] });
+// Importing and configuring the fonts
+const inter = Inter({ 
+  subsets: ["latin"], 
+  weight: ["400", "700"], // Customize weights as needed
+  variable: "--font-inter", 
+});
 
-// export const metadata: Metadata = {
-//   title: "MC CLOTHES",
-//   description: "MC CLOTHES ONLINE STORE",
-// };
+const six_caps = Six_Caps({ 
+  subsets: ["latin"], 
+  weight: ["400"], // Customize weights as needed
+  variable: "--font-six-caps", 
+});
+
+const montserrat = Montserrat({ 
+  subsets: ["latin"], 
+  weight: ["400", "700"], // Customize weights as needed
+  variable: "--font-montserrat", 
+});
+
+const poppins = Poppins({ 
+  subsets: ["latin"], 
+  weight: ["100", "200", "300", "400", "500", "600", "700"], // Customize weights as needed
+  variable: "--font-poppins", 
+});
+
+const outfit = Outfit({ 
+  subsets: ["latin"], 
+  weight: ["100", "200", "300", "400", "500", "600", "700"], // Customize weights as needed
+  variable: "--font-outfit" 
+});
 
 export default function RootLayout({
   children,
@@ -19,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${six_caps.variable} ${montserrat.variable} ${poppins.variable} ${outfit.variable}`}>
       <WixClientContextProvider>
         <Navbar/>
         {children}
