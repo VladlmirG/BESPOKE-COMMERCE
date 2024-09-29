@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type  Metadata  from "next";
 import CategoryList from "@/components/CategoryList";
 import ProductList from "@/components/ProductList";
 import Skeleton from "@/components/Skeleton";
@@ -55,7 +55,7 @@ export default async function HomePage() {
       </div>
 
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-        <h1 className="text-2xl">BEST SELLERS</h1>
+        <h1 className="six_caps-font text-bluey tracking-wider text-5xl">BEST SELLERS</h1>
         <Suspense fallback={<Skeleton />}>
           <ProductList
             categoryId={process.env.BEST_PRODUCTS_CATEGORY_ID!}
@@ -63,8 +63,8 @@ export default async function HomePage() {
           />
         </Suspense>
       </div>
-      <div className="mt-24">
-        <h1 className="text-2xl px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 mb-12">
+      <div className="my-40">
+        <h1 className="six_caps-font text-bluey tracking-wider text-8xl px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 mb-12">
           CATEGORIES
         </h1>
         <Suspense fallback={<Skeleton />}>
@@ -72,7 +72,7 @@ export default async function HomePage() {
         </Suspense>
       </div>
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-        <h1 className="text-2xl">NEW COLLECTION</h1>
+        <h1 className="six_caps-font text-bluey tracking-wider text-5xl">NEW COLLECTION</h1>
         <Suspense fallback={<Skeleton />}>
           <ProductList
             categoryId={process.env.NEW_PRODUCTS_CATEGORY_ID!}
