@@ -1,5 +1,5 @@
 import Head from 'next/head'; 
-import type  Metadata  from "next";
+import type { Metadata } from "next";
 import Skeleton from "@/components/Skeleton";
 import { wixClientServer } from "@/lib/wixClientServer";
 import Image from "next/image";
