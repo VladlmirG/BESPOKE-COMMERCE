@@ -158,3 +158,31 @@ transform: scale(1);
 .custom-shape-divider-bottom .shape-fill {
   fill: #f5c5c9;
 }
+
+
+
+
+.custom-shape-divider-bottom-2 {
+  position: relative;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  height: 120px; /* Adjust the height as needed */
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 6rem;
+  margin-bottom: -4rem;
+  transform: rotate(180deg); /* Slight adjustment to connect the sections seamlessly */
+}
+
+.custom-shape-divider-bottom-2 svg {
+  position: absolute;
+  display: block;
+  width: calc(100% + 1.3px); /* Slight adjustment to avoid gaps */
+  height: 60px; /* Adjust height as needed */
+}
+
+
+.custom-shape-divider-bottom-2 .shape-fill {
+  fill: #f5c5c9;
+}
