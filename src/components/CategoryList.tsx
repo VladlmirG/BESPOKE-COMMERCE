@@ -53,7 +53,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ categories }) => {
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-pink-200 to-blue-100 opacity-50"></div> */}
               </div>
-              <h1 className="mt-8 font-normal text-center text-xl tracking-wide">
+              <h1 className="montserrat-font mt-8 font-normal text-center text-xl tracking-wide">
                 {item.name}
               </h1>
             </Link>
