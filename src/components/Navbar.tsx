@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
 
         {/* BOTTOM SECTION: LINKS */}
-        <div className="w-full flex justify-center items-center gap-8 bg-pinky pt-5">
+        <div className="montserrat-font w-full flex justify-center items-center gap-8 bg-pinky pt-5">
           <Link href="/" className="nav-links text-bluey">HOME</Link>
           <div className="relative group">
               <div className="flex items-center">
