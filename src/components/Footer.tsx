@@ -7,7 +7,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
   return (
-    <div className="py-24 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 bg-gradient-to-r from-pink-100 to-white-500 text-bluey text-sm mt-24">
+
+    <div className="py-24 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 bg-pinky text-bluey text-sm">
       {/* TOP */}
       <div className="flex flex-col md:flex-row justify-between gap-24">
 
