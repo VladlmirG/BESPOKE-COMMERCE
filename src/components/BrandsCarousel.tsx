@@ -27,7 +27,7 @@ const BrandsCarousel: React.FC = () => {
     Autoscroll({
       speed: 2,
       startDelay: 1000,
-      direction: 'backwards',
+      direction: 'backward',
       playOnInit: true,
       stopOnInteraction: false,
       stopOnMouseEnter: false,
