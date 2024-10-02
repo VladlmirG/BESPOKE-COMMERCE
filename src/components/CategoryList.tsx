@@ -49,7 +49,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ categories }) => {
                   alt=""
                   fill
                   sizes="20vw"
-                  className="object-cover rounded-md opacity-70 hover:scale-105 hover:opacity-100"
+                  className="object-cover rounded-md opacity-80 hover:scale-105 hover:opacity-100"
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-pink-200 to-blue-100 opacity-50"></div> */}
               </div>
