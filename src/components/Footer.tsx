@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { spacing } from '@mui/system';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
@@ -10,10 +11,10 @@ const Footer = () => {
 
     <div className="py-24 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 bg-pinky text-bluey text-sm">
       {/* TOP */}
-      <div className="flex flex-col md:flex-row justify-between gap-24">
+      <div className="flex flex-col items-center text-center md:flex-row justify-between gap-24">
 
         {/* LEFT */}
-        <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
+        <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col items-center text-center gap-8">
           <Link href="/">
             {/* <div className="text-2xl tracking-wide">LAMA</div> */}
             <Image src="/logo.png" alt="" width={250} height={250} />
@@ -29,24 +30,24 @@ const Footer = () => {
             <span className="font-semibold hover:text-hovr">+1 (832) 441 6021</span>
           </Link>
 
-          <div className="flex gap-6">
+        <div className="flex gap-6">
          <a href="https://www.facebook.com/bespokequince" target="_blank">
-    <FacebookIcon style={{ width: 16, height: 16 }} />
-  </a>
-  <a href="https://www.instagram.com/bespokequince/?hl=en" target="_blank">
-    <InstagramIcon style={{ width: 16, height: 16 }} />
-  </a>
-  <a href="https://www.whatsapp.com" target="_blank">
-    <WhatsAppIcon style={{ width: 16, height: 16 }} />
-  </a>
-  <a href="https://www.tiktok.com" target="_blank">
-    <img src='/tiktok.svg' style={{ width: 16, height: 16 }} />
-  </a>
-          </div>
+          <FacebookIcon className="footer-social" sx={{ p: 1 }} />
+         </a>
+         <a href="https://www.instagram.com/bespokequince/?hl=en" target="_blank">
+          <InstagramIcon className="footer-social" sx={{ p: 1 }} />
+         </a>
+         <a href="https://www.pinterest.com/bespokexvandformal/_saved/" target="_blank">
+          <PinterestIcon className="footer-social" sx={{ p: 1 }} />
+         </a>
+         <a href="https://api.whatsapp.com/send?phone=18324416021&text-Hello,%20more%20information!" target="_blank">
+          <WhatsAppIcon className="footer-social" sx={{ p: 1 }} />
+         </a>
+        </div>
         </div>
 
         {/* CENTER */}
-        <div className="hidden lg:flex justify-between w-1/3">
+        <div className="lg:flex justify-between w-1/3 items-center text-center">
           {/* <div className="flex flex-col justify-between">
             <h1 className="font-medium text-lg">COMPANY</h1>
             <div className="flex flex-col gap-6">
@@ -57,8 +58,8 @@ const Footer = () => {
               <Link href="">Contact Us</Link>
             </div>
           </div> */}
-          <div className="flex flex-col justify-between">
-            <h1 className="font-medium text-lg">EXPLORE</h1>
+          <div className="hidden lg:flex flex-col justify-between gap-12">
+            <h1 className="six_caps-font font-medium text-2xl tracking-widest">EXPLORE</h1>
             <div className="flex flex-col gap-6">
               <Link href="/list?cat=accessories" className="hover:text-hovr">Accessories</Link>
               <Link href="/list?cat=best-sellers" className="hover:text-hovr">Best Sellers</Link>
@@ -68,8 +69,8 @@ const Footer = () => {
               <Link href="/list?cat=quinceanera" className="hover:text-hovr">Quinceanera</Link>
             </div>
           </div>
-          <div className="flex flex-col justify-between">
-            <h1 className="font-medium text-lg">INFO</h1>
+          <div className="flex flex-col justify-between gap-12">
+            <h1 className="six_caps-font font-medium text-2xl tracking-widest">INFO</h1>
             <div className="flex flex-col gap-6">
               <Link href="/contact" className="hover:text-hovr">Contact</Link>
               <Link href="/about" className="hover:text-hovr">About</Link>
@@ -97,7 +98,7 @@ const Footer = () => {
             <button className="w-1/4 bg-cart text-white">JOIN</button>
           </div> */}
 
-          <span className="font-semibold">SECURE PAYMENTS</span>
+          <span className="six_caps-font font-medium text-2xl tracking-widest items-center text-center">SECURE PAYMENTS</span>
           <div className="flex justify-between">
             <Image src="/discover.png" alt="" width={40} height={20} />
             <Image src="/skrill.png" alt="" width={40} height={20} />
@@ -112,7 +113,7 @@ const Footer = () => {
       {/* BOTTOM */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
         <div className="flex flex-col justify-between gap-2">
-          <span>© 2024 BESPOKE XV & FORMAL</span>
+          <span>© 2024 BESPOKE XV & FORMAL | All Rights Reserved</span>
           <span className="font-extralight text-xs text-gray">Site developed by
           <Link href="https://vladimirgotay.com/" target="_blank" className="hover:text-black"> Vladimir G</Link>
           </span>
