@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CategoryList from "@/components/CategoryList";
+import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductList from "@/components/ProductList";
 import Skeleton from "@/components/Skeleton";
 import Slider from "@/components/Slider";
@@ -70,6 +71,7 @@ export default async function HomePage() {
         <Suspense fallback={<Skeleton />}>
         <CategoryList categories={categories} />
         </Suspense>
+         <BrandsCarousel />
       </div>
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         <h1 className="six_caps-font text-bluey tracking-wider text-5xl text-center relative headings"><span>NEW COLLECTION</span></h1>
