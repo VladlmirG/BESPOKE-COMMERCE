@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type  Metadata  from "next";
 import CategoryList from "@/components/CategoryList";
 import ProductList from "@/components/ProductList";
 import Skeleton from "@/components/Skeleton";
@@ -28,7 +28,7 @@ export default async function HomePage() {
     <>
     <div className="">
       <Slider />
-      {/* SVG WAVE VECTOR */}
+      {/* SVG WAVE SHAPE */}
       <div className="custom-shape-divider-bottom">
           <svg
             className="absolute bottom-0 w-full"
@@ -55,7 +55,7 @@ export default async function HomePage() {
       </div>
 
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-        <h1 className="six_caps-font text-bluey tracking-wider text-5xl">BEST SELLERS</h1>
+        <h1 className="six_caps-font text-bluey tracking-wider text-5xl text-center relative headings"><span>BEST SELLERS</span></h1>
         <Suspense fallback={<Skeleton />}>
           <ProductList
             categoryId={process.env.BEST_PRODUCTS_CATEGORY_ID!}
@@ -64,15 +64,15 @@ export default async function HomePage() {
         </Suspense>
       </div>
       <div className="my-40">
-        <h1 className="six_caps-font text-bluey tracking-wider text-8xl px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 mb-12">
-          CATEGORIES
+        <h1 className="six_caps-font text-bluey tracking-wider text-8xl px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 mb-12 text-center relative headings">
+          <span>CATEGORIES</span>
         </h1>
         <Suspense fallback={<Skeleton />}>
         <CategoryList categories={categories} />
         </Suspense>
       </div>
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-        <h1 className="six_caps-font text-bluey tracking-wider text-5xl">NEW COLLECTION</h1>
+        <h1 className="six_caps-font text-bluey tracking-wider text-5xl text-center relative headings"><span>NEW COLLECTION</span></h1>
         <Suspense fallback={<Skeleton />}>
           <ProductList
             categoryId={process.env.NEW_PRODUCTS_CATEGORY_ID!}
