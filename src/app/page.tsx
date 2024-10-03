@@ -25,6 +25,13 @@ export default async function HomePage() {
       media: collection.media?.mainMedia?.image?.url || 'cat.png',
     })) as Category[];
 
+    const hiddenSlugs = process.env.HIDDEN_SLUGS?.split(',').map(slug => slug.trim()) || [];
+
+    const visibleCategories = categories.filter((category) => {
+      const shouldHide = hiddenSlugs.includes(category._id); // Use _id for matching
+      return !shouldHide;
+    });
+
   return (
     <>
     <div className="">
@@ -69,9 +76,9 @@ export default async function HomePage() {
           <span>CATEGORIES</span>
         </h1>
         <Suspense fallback={<Skeleton />}>
-        <CategoryList categories={categories} />
+        <CategoryList categories={visibleCategories} />
         </Suspense>
-         <BrandsCarousel />
+        <BrandsCarousel />
       </div>
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         <h1 className="six_caps-font text-bluey tracking-wider text-5xl text-center relative headings"><span>NEW COLLECTION</span></h1>
