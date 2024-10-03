@@ -15,9 +15,7 @@ body {
 }
 
 .subm {
-  backdrop-filter: blur(16px) saturate(174%);
-  -webkit-backdrop-filter: blur(16px) saturate(174%);
-  background-color: rgba(245, 197, 201, 0.75);
+  background-color: #f5c5c9;
 }
 
 .mm {
