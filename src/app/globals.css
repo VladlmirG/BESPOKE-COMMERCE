@@ -243,3 +243,15 @@ background: #355274c4;
     height: 1px;
     background-image: linear-gradient(to right, rgba(53, 82, 116, 0.75), rgba(53, 82, 116, 0.75), rgba(0, 0, 0, 0));
 }
+
+.loginbg{
+  background-image: url('/login.jpg');
+  background-size: cover;
+  background-position: center; 
+  top: 0;
+  left: 0;
+}
+
+.loginform{
+  width: 400px;
+}
