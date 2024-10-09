@@ -77,7 +77,7 @@ const SuccessPage = () => {
       <h2 className="text-lg md:text-xl font-medium text-center">
         We sent the invoice to your e-mail
       </h2>
-      <h3 className="text-sm md:text-base text-center">
+      <h3 className="text-sm md:text-base text-center text-bluey">
          You are being redirected to the order page...
       </h3>
     </div>
