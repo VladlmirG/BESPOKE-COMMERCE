@@ -63,7 +63,7 @@ export default async function HomePage() {
       </div>
 
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-        <h1 className="six_caps-font text-bluey tracking-wider text-5xl text-center relative headings"><span>BEST SELLERS</span></h1>
+        <h1 className="poiret_one-font text-bluey tracking-wider text-4xl lg:text-5xl text-center relative headings"><span>BEST SELLERS</span></h1>
         <Suspense fallback={<Skeleton />}>
           <ProductList
             categoryId={process.env.BEST_PRODUCTS_CATEGORY_ID!}
@@ -71,8 +71,8 @@ export default async function HomePage() {
           />
         </Suspense>
       </div>
-      <div className="my-40">
-        <h1 className="six_caps-font text-bluey tracking-wider text-8xl px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 mb-12 text-center relative headings">
+      <div className="my-40 category-section">
+        <h1 className="poiret_one-font text-bluey tracking-wider text-5xl lg:text-8xl px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 mb-12 text-center relative headings">
           <span>CATEGORIES</span>
         </h1>
         <Suspense fallback={<Skeleton />}>
@@ -81,7 +81,7 @@ export default async function HomePage() {
         <BrandsCarousel />
       </div>
       <div className="mt-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-        <h1 className="six_caps-font text-bluey tracking-wider text-5xl text-center relative headings"><span>NEW COLLECTION</span></h1>
+        <h1 className="poiret_one-font text-bluey tracking-wider text-3xl lg:text-5xl text-center relative headings"><span>NEW COLLECTION</span></h1>
         <Suspense fallback={<Skeleton />}>
           <ProductList
             categoryId={process.env.NEW_PRODUCTS_CATEGORY_ID!}

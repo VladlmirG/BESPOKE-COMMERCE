@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
           </div> */}
           <div className="hidden lg:flex flex-col justify-between gap-12">
-            <h1 className="six_caps-font font-medium text-2xl tracking-widest">EXPLORE</h1>
+            <h1 className="poiret_one-font font-medium text-2xl tracking-widest">EXPLORE</h1>
             <div className="flex flex-col gap-6">
               <Link href="/list?cat=accessories" className="hover:text-hovr">Accessories</Link>
               <Link href="/list?cat=best-sellers" className="hover:text-hovr">Best Sellers</Link>
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col justify-between gap-12">
-            <h1 className="six_caps-font font-medium text-2xl tracking-widest">INFO</h1>
+            <h1 className="poiret_one-font font-medium text-2xl tracking-widest">INFO</h1>
             <div className="flex flex-col gap-6">
               <Link href="/contact" className="hover:text-hovr">Contact</Link>
               <Link href="/about" className="hover:text-hovr">About</Link>
@@ -98,7 +98,7 @@ const Footer = () => {
             <button className="w-1/4 bg-cart text-white">JOIN</button>
           </div> */}
 
-          <span className="six_caps-font font-medium text-2xl tracking-widest items-center text-center">SECURE PAYMENTS</span>
+          <span className="poiret_one-font font-medium text-2xl tracking-widest items-center text-center">SECURE PAYMENTS</span>
           <div className="flex justify-between">
             <Image src="/discover.png" alt="" width={40} height={20} />
             <Image src="/skrill.png" alt="" width={40} height={20} />
@@ -113,7 +113,7 @@ const Footer = () => {
       {/* BOTTOM */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
         <div className="flex flex-col justify-between gap-2">
-          <span>© 2024 BESPOKE XV & FORMAL | All Rights Reserved</span>
+          <span>© 2025 BESPOKE XV & FORMAL | All Rights Reserved</span>
           <span className="font-extralight text-xs text-gray">Site developed by
           <Link href="https://vladimirgotay.com/" target="_blank" className="hover:text-black"> Vladimir G</Link>
           </span>

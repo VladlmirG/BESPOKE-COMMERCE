@@ -75,7 +75,7 @@ const ListPage = async ({ searchParams }: { searchParams: any }) => {
       {/* FILTER */}
       <Filter />
       {/* PRODUCTS */}
-      <h1 className="mt-12 text-5xl six_caps-font text-bluey tracking-wider relative headings2"><span>{cat?.collection?.name}</span></h1>
+      <h1 className="mt-12 text-5xl poiret_one-font text-bluey tracking-wider relative headings2"><span>{cat?.collection?.name}</span></h1>
       <Suspense fallback={<Skeleton />}>
         <ProductList
           categoryId={

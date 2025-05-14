@@ -49,11 +49,11 @@ const CategoryList: React.FC<CategoryListProps> = ({ categories }) => {
                   alt=""
                   fill
                   sizes="20vw"
-                  className="object-cover rounded-md opacity-80 hover:scale-105 hover:opacity-100"
+                  className="object-cover rounded-md opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-300"
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-pink-200 to-blue-100 opacity-50"></div> */}
               </div>
-              <h1 className="montserrat-font mt-8 font-normal text-center text-xl tracking-wide">
+              <h1 className="poiret_one-font mt-8 font-semibold text-center text-xl tracking-widest uppercase text-bluey">
                 {item.name}
               </h1>
             </Link>

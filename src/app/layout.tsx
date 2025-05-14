@@ -1,4 +1,4 @@
-import { Inter, Six_Caps, Montserrat, Poppins, Outfit } from "next/font/google";
+import { Inter, Six_Caps, Montserrat, Poppins, Outfit, Poiret_One } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,6 +15,12 @@ const six_caps = Six_Caps({
   subsets: ["latin"], 
   weight: ["400"], // Customize weights as needed
   variable: "--font-six-caps", 
+});
+
+const poiret_one = Poiret_One({ 
+  subsets: ["latin"], 
+  weight: ["400"], // Customize weights as needed
+  variable: "--font-poiret_one", 
 });
 
 const montserrat = Montserrat({ 
@@ -42,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${six_caps.variable} ${montserrat.variable} ${poppins.variable} ${outfit.variable}`}>
+      <body className={`${inter.variable} ${six_caps.variable} ${montserrat.variable} ${poppins.variable} ${outfit.variable} ${poiret_one.variable}`}>
       <WixClientContextProvider>
         <Navbar/>
         {children}

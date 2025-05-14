@@ -136,14 +136,14 @@ const SinglePage = async ({ params }: { params: { slug: string } }) => {
       </div>
       {/* TEXTS */}
       <div className="w-full lg:w-1/2 flex flex-col gap-6">
-        <h1 className="text-4xl font-medium text-bluey">{product.name}</h1>
+        <h1 className="text-4xl font-medium montserrat-font text-bluey">{product.name}</h1>
         <div
           className="text-gray-500"
           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(product.description || '') }}
         />
         <div className="h-[2px] bg-gray-100" />
         {product.price?.price === product.price?.discountedPrice ? (
-          <h2 className="font-medium text-2xl">$ {product.price?.price}</h2>
+          <h2 className="font-semibold text-2xl poiret_one-font">USD ${product.price?.price}</h2>
         ) : (
           <div className="flex items-center gap-4">
             <h3 className="text-xl text-gray-500 line-through">

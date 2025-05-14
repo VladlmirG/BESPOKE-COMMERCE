@@ -10,6 +10,10 @@ body {
   font-family: var(--font-montserrat), sans-serif;
 }
 
+.poiret_one-font{
+  font-family: var(--font-poiret_one), sans-serif;
+}
+
 .six_caps-font{
   font-family: var(--font-six-caps), sans-serif;
 }
@@ -128,7 +132,7 @@ transform: scale(1);
     rgba(204, 111, 60, 1) 100%,
     rgba(19, 41, 67, 1) 100%
   );
-  opacity: 0.5; /* Overlay opacity */
+  opacity: 0.7; /* Overlay opacity */
   z-index: -1; /* Place behind the text */
   pointer-events: none; /* Prevent overlay from interfering with text interactions */
 }
@@ -254,4 +258,10 @@ background: #355274c4;
 
 .loginform{
   width: 400px;
+}
+
+
+.category-section {
+background: #F5C5C9;
+background: linear-gradient(0deg, rgba(245, 197, 201, 0.13) 0%, rgba(255, 255, 255, 0) 100%);
 }

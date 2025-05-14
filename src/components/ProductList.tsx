@@ -98,8 +98,8 @@ const ProductList = async ({
               )}
             </div>
             <div className="flex justify-between">
-              <span className="font-medium text-bluey">{product.name}</span>
-              <span className="font-semibold">USD$. {product.price?.price}</span>
+              <span className="font-semibold text-bluey montserrat-font">{product.name}</span>
+              <span className="poiret_one-font font-semibold">USD ${product.price?.price}</span>
             </div>
             {product.additionalInfoSections && (
               <div
