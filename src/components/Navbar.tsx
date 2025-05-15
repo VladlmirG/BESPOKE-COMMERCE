@@ -66,7 +66,16 @@ const Navbar = () => {
         {/* BOTTOM SECTION: LINKS */}
         <div className="montserrat-font w-full flex justify-center items-center gap-8 bg-pinky pt-5">
           <Link href="/" className="nav-links text-bluey">HOME</Link>
-          <div className="relative group">
+          <Link href="/list?cat=best-sellers" className="nav-links text-bluey">BEST SELLERS</Link>
+          <Link href="/list?cat=new-collection" className="nav-links text-bluey">NEW COLLECTION</Link>
+          <Link href="/list?cat=quinceanera" className="nav-links text-bluey">QUINCEANERA</Link>
+          <Link href="/list?cat=prom" className="nav-links text-bluey">PROM</Link>
+          <Link href="/list?cat=special-ocassion" className="nav-links text-bluey">SPECIAL OCASSION</Link>
+          <Link href="/list?cat=tuxedos-suits" className="nav-links text-bluey">TUXEDOS & SUITS</Link>
+          <Link href="/list?cat=children" className="nav-links text-bluey">CHILDREN</Link>
+          <Link href="/list?cat=accessories" className="nav-links text-bluey">ACCESSORIES</Link>
+
+          {/* <div className="relative group">
               <div className="flex items-center">
                 <Link href="/list?cat=all-products" className="nav-links text-bluey">STORE</Link>
               </div>
@@ -80,7 +89,8 @@ const Navbar = () => {
                 <Link href="/list?cat=special-ocassion" className="text-bluey px-4 py-2 hover:font-semibold">Special Ocassion</Link>
                 <Link href="/list?cat=tuxedos-suits" className="text-bluey px-4 py-2 hover:font-semibold">Tuxedos & Suits</Link>
               </div>
-            </div>
+            </div> */}
+            
           <Link href="/about" className="nav-links text-bluey">ABOUT</Link>
           <Link href="/contact" className="nav-links text-bluey">CONTACT</Link>
         </div>

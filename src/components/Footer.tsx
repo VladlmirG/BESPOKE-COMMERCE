@@ -114,9 +114,10 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
         <div className="flex flex-col justify-between gap-2">
           <span>© 2025 BESPOKE XV & FORMAL | All Rights Reserved</span>
-          <span className="font-extralight text-xs text-gray">Site developed by
+          
+          {/* <span className="font-extralight text-xs text-gray">Site developed by
           <Link href="https://vladimirgotay.com/" target="_blank" className="hover:text-black"> Vladimir G</Link>
-          </span>
+          </span> */}
         </div>
         
         <div className="flex flex-col gap-8 md:flex-row">

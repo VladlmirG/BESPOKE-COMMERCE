@@ -92,7 +92,7 @@ const CartModal: React.FC<CartModalProps> = ({ isOpen, onClose }) => {
 
         <div className="p-4 flex-grow overflow-y-auto mt-2">
           {!cart?.lineItems || cart.lineItems.length === 0 ? (
-            <div className="text-center">Cesta Vacía</div>
+            <div className="text-center">Empty Cart</div>
           ) : (
             <div className="flex flex-col gap-10">
               {cart.lineItems.map((item) => (

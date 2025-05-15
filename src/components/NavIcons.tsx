@@ -49,7 +49,7 @@ const NavIcons = () => {
 
   return (
     <div className="flex items-center gap-4 xl:gap-6 relative">
-      <Tooltip title={isLoggedIn ? "Perfil" : "Registrate o inicia sesión"} arrow>
+      <Tooltip title={isLoggedIn ? "Profile" : "Signin or Signup"} arrow>
         <Image
           src="/profile-t.png"
           alt=""
@@ -65,7 +65,7 @@ const NavIcons = () => {
           className="absolute p-4 rounded-md top-12 left-1/2 transform -translate-x-1/2 text-center bg-white text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20 whitespace-nowrap"
         >
           <Link href="/profile" className="px-4 py-2 hover:text-hovr hover:font-semibold">
-            Perfil
+            Profile
           </Link>
           <div
             className="mt-2 cursor-pointer px-4 py-2 hover:text-logout hover:font-semibold"
@@ -76,7 +76,7 @@ const NavIcons = () => {
         </div>
       )}
 
-      <Tooltip title="Cesta" arrow>
+      <Tooltip title="My Cart" arrow>
         <div
           ref={cartRef}
           className="relative cursor-pointer"
